@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta encoding="UTF-8" />
+    <title>Here is the text in the browser tab</title>
+    <!-- this is an HTML comment. This doesn't show up on the sceen. They are notes for developers-->
+    <!-- items in the <head> is not meant to be seen on the screen -->
+
+    <!-- 
+      Other thngs in the head include 
+      - links to stylesheets and other resources
+      - style blocks
+      - script tags for javascript or for including external javascript files
+      - meta tags that describe the web page, informs the browser about behaviors (eg how to scale based on device width)
+    -->
+  </head>
+  <body>
+    <!-- the body holds the visual part of the page and provides an information hiearchy and semantic structure  -->
+    <header>
+      <nav>
+        <div>
+          <img src="https://via.placeholder.com/50" />
+          <span>Logo</span>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Main idea of your page</h1>
+      <article>
+        <h2>Article 1 title</h2>
+        <p>
+          Odio ornare dolor nisi rutrum id curabitur tortor velit quam. Sit
+          curabitur fusce faucibus consectetuer dictumst urna parturient
+          viverra. Sagittis facilisi curabitur ullamcorper nostra odio semper
+          vestibulum.
+        </p>
+        <section>
+          <h3>Ridiculus interdum dui odio per</h3>
+          <p>
+            Enim taciti litora natoque molestie tincidunt luctus lorem. Posuere
+            nostra dis aliquam euismod imperdiet penatibus dictumst finibus
+            vehicula non placerat. Nisl vulputate dictumst lacus quis magnis in.
+          </p>
+        </section>
+        <section>
+          <h3>Volutpat dignissim aliquet nullam pede</h3>
+          <p>
+            Gravida risus nam lobortis in dignissim sed viverra placerat.
+            Tristique consequat ornare auctor interdum nulla dui ridiculus
+            feugiat maecenas. Diam ridiculus ullamcorper fusce arcu magnis fames
+            orci phasellus.
+            <figure>
+              <img src="https://via.placeholder.com/200" />
+              <figcaption>You can caption images</figcaption>
+            </figure>
+          </p>
+        </section>
+      </article>
+      <article>
+        <h2>Article 2 title</h2>
+        <p>
+          Laoreet lacus mattis mi semper et. Euismod luctus integer placerat
+          vehicula porttitor duis interdum si gravida mattis magnis. Platea sed
+          curae lobortis porta facilisis cubilia cursus.
+        </p>
+        <section>
+          <h3>Ornare id elementum tellus aliquam</h3>
+          <p>
+            Integer metus tellus nascetur feugiat dis per at ridiculus pulvinar.
+            Mus tempus blandit si massa integer lorem proin luctus et platea
+            sapien. Sollicitudin letius augue aptent lobortis viverra. Sagittis
+            primis leo ipsum curabitur montes accumsan. Dapibus convallis mi
+            habitant hac morbi netus. Eu interdum felis ante urna eros mattis
+            quam nullam risus litora quisque. Senectus eros adipiscing dignissim
+            cubilia litora luctus mattis.
+          </p>
+          <p>
+            Eget lorem ac per feugiat ornare erat tellus justo maecenas. Mollis
+            potenti nascetur adipiscing vehicula dui montes blandit maximus
+            efficitur quis. Egestas parturient eu etiam venenatis pulvinar
+            risus. Tristique aenean habitasse id ac turpis. Imperdiet hac
+            fermentum augue vulputate cursus commodo tempus.
+          </p>
+        </section>
+        <section>
+          <h3>Ridiculus sed montes nam magna</h3>
+          <p>
+            Suscipit nisi inceptos ac pharetra <mark>integer dapibus hac</mark>. Porttitor aptent enim ornare vehicula pretium. Dapibus penatibus etiam volutpat erat massa vel odio fames sed.
+            <h4 id="definition-description">Available drinks</h4>
+            <dl aria-describedby="definition-description">
+              <dt>Coffee</dt>
+              <dd>A black caffinated drink</dd>
+              <dt>Orange juice</dt>
+              <dd>A drink made of liquid squeezed from an orange</dd>
+            </dl>
+          </p>
+        </section>
+      </article>
+      <!-- 
+        Forms can have an action. Historically, we would use the action attribute as the
+        url to the backend location to which we send the form for processing (e.g., store in
+        a database) when the form is submitted. The submission will also trigger a page load
+        as a result of the backend's We will teach you how to use javascript to accomplish
+        the same thing but without a page load, a feature of Single Page Applications (SPA's).
+
+        If the action is blank or not supplied, then the form is submitted to the same url as
+        this page. This was typical of PHP and ASP pages.
+      -->
+      <form name="contact_form" action="" method="POST">
+        <h2>Contact form</h2>
+        <small>(fields marked * are required)</small>
+        <div>
+          <label for="full_name">Full Name *:</label>
+          <input
+            type="text"
+            id="full_name"
+            name="full_name"
+            required
+            placeholder="enter full name here"
+          />
+        </div>
+        <div>
+          <label for="email_address">Email *:</label>
+          <input
+            id="email_address"
+            name="email_address"
+            type="email"
+            required
+            placeholder="enter full name here"
+          />
+        </div>
+        <input type="submit" value="Submit form" />
+      </form>
+    </main>
+    <footer>
+      <small>Copyright © 2022 John Young, All rights reserved</small>
+    </footer>
+  </body>
+</html>
+
+<!-- test -->
